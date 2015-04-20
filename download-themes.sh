@@ -19,7 +19,7 @@ else
 	repo_url='http://themes.svn.wordpress.org/'
 fi
 
-echo "Insert the themes (one per line) and press ctrl+D"
+echo "Insert the themes slugs (one per line) and press ctrl+D"
 MSG=$(cat)
 
 echo "Fetching themes from $repo_url. This could take some time"
