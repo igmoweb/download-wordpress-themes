@@ -1,5 +1,3 @@
-#!/bin/bash
-
 themes_dir=`pwd`
 
 echo "What repository would you like to get those themes from? wp.com (c)/wp.org (o) ? [Default:wp.org]"
@@ -30,7 +28,7 @@ do
 
 	if [ $REPO == 'o' ]
 	then
-		last_version=`ls $theme | tail -1`
+		last_version=`ls -v $theme | tail -1`
 		for x in `ls $theme`
 		do
 			if [ $last_version != $x ]
@@ -49,4 +47,3 @@ done
 
 
 exit 1
-
