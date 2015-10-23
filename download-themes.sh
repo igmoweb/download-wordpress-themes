@@ -28,7 +28,7 @@ do
 
 	if [ $REPO == 'o' ]
 	then
-		last_version=`ls -v $theme | tail -1`
+		last_version=`ls -v $theme | sort -t. -k 1,1n -k 2,2n -k 3,3n -k 4,4n | tail -1`
 		for x in `ls $theme`
 		do
 			if [ $last_version != $x ]
